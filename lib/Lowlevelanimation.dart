@@ -67,7 +67,7 @@ class _AnimationinsimplewidgetAppState extends State<AnimationinsimplewidgetApp>
             ElevatedButton(
                 onPressed: newcontroller!.isCompleted
                     ? null
-                    : () => newcontroller!.repeat(),
+                    : () => newcontroller!.repeat(reverse: true),
                 child: Text('Play')),
             SizedBox(height: 20),
             ElevatedButton(
