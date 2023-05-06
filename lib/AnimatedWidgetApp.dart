@@ -22,6 +22,8 @@ class _MakeOwnAnimationWidgetAppState extends State<MakeOwnAnimationWidgetApp>
       begin: 100,
       end: 200,
     ).animate(Mycontroller!);
+    colorAnimation = ColorTween(begin: Colors.pinkAccent, end: Colors.amber)
+        .animate(Mycontroller!);
   }
 
   @override
@@ -34,7 +36,8 @@ class _MakeOwnAnimationWidgetAppState extends State<MakeOwnAnimationWidgetApp>
         child: Column(
           children: [
             _MyAnimatedContainer(
-              sizeAnimation: sizeAnimation,
+              Animatedsize: sizeAnimation,
+              Animatecolor: colorAnimation,
             ),
             ElevatedButton(
               onPressed: () => Mycontroller?.forward(),
@@ -52,9 +55,13 @@ class _MakeOwnAnimationWidgetAppState extends State<MakeOwnAnimationWidgetApp>
 }
 
 class _MyAnimatedContainer extends AnimatedWidget {
+  Animation<double>? Animatedsize;
+  Animation<Color?>? Animatecolor;
 
-  _MyAnimatedContainer({Animation<double>? sizeAnimation,}) : super(listenable: sizeAnimation!);
+  _MyAnimatedContainer({this.Animatedsize, this.Animatecolor})
+      : super(listenable: Animatedsize!);
 
+  // _MyAnimatedContainer({Animation<double>? sizeAnimation,}) : super(listenable: sizeAnimation!);
 
   @override
   Widget build(BuildContext context) {
@@ -63,8 +70,9 @@ class _MyAnimatedContainer extends AnimatedWidget {
     return Container(
       child: Image.network(
           'https://thumbs.dreamstime.com/b/creative-mind-concept-hand-holding-colorful-brain-sketch-concrete-background-85126393.jpg'),
-      height: sizeAnimation!.value,
-      width: sizeAnimation!.value,
+      height: Animatedsize!.value,
+      width: Animatedsize!.value,
+      color: Animatecolor!.value,
       padding: EdgeInsets.all(15),
     );
   }
