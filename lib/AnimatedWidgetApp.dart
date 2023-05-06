@@ -12,6 +12,7 @@ class _MakeOwnAnimationWidgetAppState extends State<MakeOwnAnimationWidgetApp>
     with SingleTickerProviderStateMixin {
   AnimationController? Mycontroller;
   Animation<double>? sizeAnimation;
+  Animation<Color?>? colorAnimation;
 
   @override
   void initState() {
@@ -51,8 +52,9 @@ class _MakeOwnAnimationWidgetAppState extends State<MakeOwnAnimationWidgetApp>
 }
 
 class _MyAnimatedContainer extends AnimatedWidget {
-  _MyAnimatedContainer({Animation<double>? sizeAnimation})
-      : super(listenable: sizeAnimation!);
+
+  _MyAnimatedContainer({Animation<double>? sizeAnimation,}) : super(listenable: sizeAnimation!);
+
 
   @override
   Widget build(BuildContext context) {
