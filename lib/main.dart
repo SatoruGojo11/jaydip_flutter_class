@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'AnimatedWidgetApp.dart';
+import 'lootieApp.dart';
 
 void main() {
   runApp(
@@ -8,7 +8,7 @@ void main() {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: MakeOwnAnimationWidgetApp(),
+      home: LottieuseApp(),
     ),
   );
 }

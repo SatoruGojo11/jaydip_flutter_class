@@ -34,6 +34,7 @@ class _MakeOwnAnimationWidgetAppState extends State<MakeOwnAnimationWidgetApp>
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             _MyAnimatedContainer(
               Animatedsize: sizeAnimation,
@@ -67,15 +68,13 @@ class _MyAnimatedContainer extends AnimatedWidget {
   Widget build(BuildContext context) {
     final Animation<double> sizeAnimation = listenable as Animation<double>;
 
-    return Center(
-      child: Container(
-        child: Image.network(
-            'https://thumbs.dreamstime.com/b/creative-mind-concept-hand-holding-colorful-brain-sketch-concrete-background-85126393.jpg'),
-        height: Animatedsize!.value,
-        width: Animatedsize!.value,
-        color: Animatecolor!.value,
-        padding: EdgeInsets.all(15),
-      ),
+    return Container(
+      child: Image.network(
+          'https://thumbs.dreamstime.com/b/creative-mind-concept-hand-holding-colorful-brain-sketch-concrete-background-85126393.jpg'),
+      height: Animatedsize!.value,
+      width: Animatedsize!.value,
+      color: Animatecolor!.value,
+      padding: EdgeInsets.all(15),
     );
   }
 }
