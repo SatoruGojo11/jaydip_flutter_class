@@ -15,7 +15,7 @@ class _LottieuseAppState extends State<LottieuseApp> {
       appBar: AppBar(
         title: Text('lotti Use App'),
       ),
-      body: Center(child: Lottie.asset('assets/cycling_lt.json')),
+      body: Center(child: Lottie.asset('assets/laughing.json')),
     );
   }
 }
