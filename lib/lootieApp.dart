@@ -41,6 +41,11 @@ class _LottieuseAppState extends State<LottieuseApp>
                       ? () => ltcontroller!.repeat()
                       : () => ltcontroller!.stop(),
                   icon: Icon(Icons.play_arrow)),
+              IconButton(
+                  onPressed: ltcontroller!.isCompleted
+                      ? null
+                      : () => ltcontroller!.reverse(),
+                  icon: Icon(Icons.skip_previous)),
             ],
           ),
         ],
