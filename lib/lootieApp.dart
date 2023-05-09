@@ -11,6 +11,7 @@ class LottieuseApp extends StatefulWidget {
 class _LottieuseAppState extends State<LottieuseApp>
     with SingleTickerProviderStateMixin {
   AnimationController? ltcontroller;
+  bool play = true;
 
   @override
   void initState() {
@@ -27,9 +28,14 @@ class _LottieuseAppState extends State<LottieuseApp>
       body: Column(
         children: [
           Container(
-            child: Lottie.asset('assets/laughing.json',controller: ltcontroller),
+            child: Container(
+              height: 300,
+              child: Lottie.network('htttps://assets4.lottiefiles.com/packages/lf20_utR5B1saQX.json',controller: ltcontroller),
+              width: 200,
+            ),
           ),
           ButtonBar(
+            alignment: MainAxisAlignment.center,
             children: [
               IconButton(
                   onPressed: ltcontroller!.isCompleted
@@ -37,10 +43,15 @@ class _LottieuseAppState extends State<LottieuseApp>
                       : () => ltcontroller!.forward(),
                   icon: Icon(Icons.skip_next)),
               IconButton(
-                  onPressed: ltcontroller!.isAnimating
-                      ? () => ltcontroller!.repeat()
-                      : () => ltcontroller!.stop(),
-                  icon: Icon(Icons.play_arrow)),
+                  onPressed: () {
+                    setState(() {
+                      play == !play;
+                      play
+                          ? () => ltcontroller!.repeat()
+                          : () => ltcontroller!.stop();
+                    });
+                  },
+                  icon: Icon(play ? Icons.play_arrow : Icons.pause)),
               IconButton(
                   onPressed: ltcontroller!.isCompleted
                       ? null
