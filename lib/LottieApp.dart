@@ -30,7 +30,7 @@ class _LottieuseAppState extends State<LottieuseApp>
           Container(
             child: Container(
               height: 300,
-              child: Lottie.network('htttps://assets4.lottiefiles.com/packages/lf20_utR5B1saQX.json',controller: ltcontroller),
+              child: Lottie.asset('assets/cycling_lt.json',controller: ltcontroller),
               width: 200,
             ),
           ),

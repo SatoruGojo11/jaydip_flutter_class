@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ImagepickerApp.dart';
-import 'lootieApp.dart';
+import 'LottieApp.dart';
 
 void main() {
   runApp(
@@ -9,7 +8,7 @@ void main() {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: ImagePickerApp(),
+      home: LottieuseApp(),
     ),
   );
 }
