@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'ImagepickerApp.dart';
 import 'lootieApp.dart';
 
 void main() {
@@ -8,7 +9,7 @@ void main() {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: LottieuseApp(),
+      home: ImagePickerApp(),
     ),
   );
 }
