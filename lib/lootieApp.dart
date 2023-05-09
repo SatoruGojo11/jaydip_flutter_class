@@ -27,7 +27,7 @@ class _LottieuseAppState extends State<LottieuseApp>
       body: Column(
         children: [
           Container(
-            child: Lottie.asset('assets/laughing.json'),
+            child: Lottie.asset('assets/laughing.json',controller: ltcontroller),
           ),
           ButtonBar(
             children: [
