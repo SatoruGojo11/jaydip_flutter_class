@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'ExtendedImage.dart';
 import 'LottieApp.dart';
+import 'Videoplayer.dart';
 
 void main() {
   runApp(
@@ -9,7 +10,7 @@ void main() {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: ExtendedImageApp(),
+      home: VideoPlayerApp(),
     ),
   );
 }

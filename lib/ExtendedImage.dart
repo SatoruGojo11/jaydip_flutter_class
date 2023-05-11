@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:extended_image/extended_image.dart';
-import 'package:extended_image_library/extended_image_library.dart';
+import 'package:flutter/material.dart';
 
 class ExtendedImageApp extends StatefulWidget {
   const ExtendedImageApp({Key? key}) : super(key: key);
@@ -52,8 +51,14 @@ class _ExtendedImageAppState extends State<ExtendedImageApp> {
                 icon: Icon(Icons.restore),
                 label: Text('Reset Image')),
             ElevatedButton.icon(
-                onPressed: () => Image.asset(''),
-                icon: Icon(Icons.restore),
+                onPressed: () => _imagekey.currentState!.flip(),
+                icon: Icon(Icons.flip),
+                label: Text('Flip Image')),
+            ElevatedButton.icon(
+                onPressed: () {
+                  print('${_imagekey.currentState!.rawImageData}');
+                },
+                icon: Icon(Icons.save),
                 label: Text('Save Image')),
           ],
         ),

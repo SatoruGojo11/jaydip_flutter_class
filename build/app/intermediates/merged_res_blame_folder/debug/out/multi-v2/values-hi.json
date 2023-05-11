@@ -1,8 +1,18 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.jaydip_flutter.app-mergeDebugResources-16:/values-hi/values-hi.xml",
+            "outputFile": "com.example.jaydip_flutter.app-mergeDebugResources-17:/values-hi/values-hi.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\Simba\\.gradle\\caches\\transforms-3\\421504ee97c0561dbed69f2ee78440f9\\transformed\\jetified-exoplayer-core-2.18.5\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,123,189,260,328,424,492,615,736",
+                        "endColumns": "67,65,70,67,95,67,122,120,86",
+                        "endOffsets": "118,184,255,323,419,487,610,731,818"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Simba\\.gradle\\caches\\transforms-3\\5f80b20db3afa86c72a9766b008d752d\\transformed\\core-1.9.0\\res\\values-hi\\values-hi.xml",
                     "from": {
@@ -11,6 +21,13 @@
                         "startOffsets": "55",
                         "endColumns": "100",
                         "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "823",
+                        "endColumns": "100",
+                        "endOffsets": "919"
                     }
                 }
             ]
