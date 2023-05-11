@@ -15,7 +15,7 @@ class _VideoPlayerAppState extends State<VideoPlayerApp> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    vdcontroller = VideoPlayerController.network('https://youtu.be/668nUCeBHyY')
+    vdcontroller = VideoPlayerController.network('https://cdn.pixabay.com/vimeo/337972830/Fall%20-%2023881.mp4?width=1280&hash=4b07eb0b4129b81d19e08a4fab77602fae1a7278')
       ..initialize().then((value) => () {
             setState(() {});
           })
@@ -36,6 +36,7 @@ class _VideoPlayerAppState extends State<VideoPlayerApp> {
         child: vdcontroller!.value.isInitialized
             ? VideoplayerUI()
             : CircularProgressIndicator(),
+        // child: VideoplayerUI(),
       ),
     );
   }
