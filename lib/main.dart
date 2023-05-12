@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Webview.dart';
+import 'package:jaydip_flutter/youtubeplayer.dart';
 
 void main() {
   runApp(
@@ -8,7 +8,7 @@ void main() {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: WebViewApp(),
+      home: YoutubePlayerApp(),
     ),
   );
 }

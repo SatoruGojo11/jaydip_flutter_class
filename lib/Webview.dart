@@ -24,7 +24,7 @@ class _WebViewAppState extends State<WebViewApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: WebViewWidget(controller: webcontroller!),
+      body: WebViewWidget(controller: webcontroller!,),
     );
   }
 }
