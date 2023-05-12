@@ -1,4 +1,5 @@
 # This is a generated file; do not edit or check into version control.
+flutter_inappwebview=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_inappwebview-5.7.2+3\\
 flutter_plugin_android_lifecycle=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\flutter_plugin_android_lifecycle-2.0.14\\
 fluttertoast=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\fluttertoast-8.2.1\\
 image_picker=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\image_picker-0.8.7+4\\
@@ -15,3 +16,6 @@ video_player=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\vide
 video_player_android=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\video_player_android-2.4.7\\
 video_player_avfoundation=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\video_player_avfoundation-2.4.5\\
 video_player_web=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\video_player_web-2.0.16\\
+webview_flutter=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\webview_flutter-4.2.0\\
+webview_flutter_android=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\webview_flutter_android-3.7.0\\
+webview_flutter_wkwebview=C:\\Users\\Simba\\AppData\\Local\\Pub\\Cache\\hosted\\pub.dev\\webview_flutter_wkwebview-3.4.3\\
