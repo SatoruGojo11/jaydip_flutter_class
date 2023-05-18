@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:jaydip_flutter/youtubeplayer.dart';
 
+import 'App_Ui_test.dart';
+
 void main() {
   runApp(
     MaterialApp(
@@ -8,7 +10,7 @@ void main() {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: YoutubePlayerApp(),
+      home: App_Ui_test(),
     ),
   );
 }

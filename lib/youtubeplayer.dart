@@ -48,7 +48,7 @@ class _YoutubePlayerAppState extends State<YoutubePlayerApp> {
               ElevatedButton.icon(
                   onPressed: () {
                     ytcontroller!.load(YoutubePlayer.convertUrlToId(
-                        'https://www.youtube.com/watch?v=7bOptq-NPJQ&ab_channel=NatureRelaxationFilms')!);
+                        'https://www.youtube.com/watch?v=EQOarcurXfY')!);
                   },
                   icon: Icon(Icons.skip_next),
                   label: Text('Next Video')),
@@ -64,7 +64,8 @@ class _YoutubePlayerAppState extends State<YoutubePlayerApp> {
                   icon: ytcontroller!.value.isPlaying
                       ? Icon(Icons.play_arrow)
                       : Icon(Icons.pause),
-                  label: Text(ytcontroller!.value.isPlaying ? 'Play' : 'Pause')),
+                  label:
+                      Text(ytcontroller!.value.isPlaying ? 'Play' : 'Pause')),
               SizedBox(height: 10),
               Text(ytcontroller!.metadata.title),
               SizedBox(height: 10),
@@ -72,11 +73,13 @@ class _YoutubePlayerAppState extends State<YoutubePlayerApp> {
               SizedBox(height: 10),
               Text('${ytcontroller!.metadata.duration.inSeconds}..seconds'),
               SizedBox(height: 10),
-              ElevatedButton(onPressed: (){
-                ytcontroller!.mute();
-                ytcontroller!.unMute();
-                ytcontroller!.seekTo(Duration(seconds: 10),);
-              }, child: Text('New')),
+              ElevatedButton(
+                  onPressed: () {
+                    ytcontroller!.value.isPlaying
+                        ? ytcontroller!.mute()
+                        : ytcontroller!.unMute();
+                  },
+                  child: Text('New')),
             ],
           ),
         ),
